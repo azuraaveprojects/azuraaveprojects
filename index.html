@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Ensures the background and text colors match the design */
+        .card {
+            background-color: #f8f9fa; /* Light grey background */
+            border: none; /* Removes the default card border */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds subtle shadow */
+        }
+    
+        .card-body {
+            padding: 1.25rem; /* Standard padding for the card content */
+        }
+    
+        .card-title {
+            color: #333; /* Dark grey color for the title */
+        }
+    
+        .card-text {
+            color: #666; /* Medium grey color for text */
+        }
+    
+        .btn-primary {
+            background-color: #007bff; /* Bootstrap primary blue */
+            border: none; /* No border for the button */
+        }
+    
+        /* Additional styling for the header of the projects section */
+        #projects h2 {
+            color: #333; /* Dark color for the heading */
+            margin-bottom: 1rem; /* Space below the heading */
+        }
+    
+        /* Customizing the overall background of the projects section */
+        #projects {
+            background-color: #fff; /* White background for contrast */
+            padding: 2rem 0; /* Padding around the section */
+        }
+
+    
+
+        /* Skills Section Styling */
+        #skills {
+            background-color: #f9f9f9; /* Light gray background for the skills section */
+            padding: 2rem 0; /* Top and bottom padding */
+        }
+
+        #skills .card {
+            margin-bottom: 1rem; /* Space below each card */
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+            border: none; /* Removes the default border */
+        }
+
+        #skills .card-img-top {
+            width: 60%; /* Adjust the size of the image */
+            margin: 0 auto 20px; /* Center image and add space below */
+            padding-top: 20px; /* Padding on top to push down the image a bit */
+        }
+
+        #skills .card-title {
+            color: #333; /* Dark grey color for titles */
+            font-size: 1.2rem; /* Larger font size for titles */
+        }
+
+        #skills .card-text {
+            color: #666; /* Medium grey color for text */
+            font-size: 0.9rem; /* Smaller font size for text */
+        }
+
+        #skills .btn-primary {
+            background-color: #0056b3; /* Custom primary color for buttons */
+            border-color: #004080; /* Darker border color for buttons */
+        }
+
+        #skills h2 {
+            color: #333; /* Dark color for the section heading */
+        }
+        #contact {
+            background-color: #262e46; /* Dark teal background */
+            color: white; /* White text */
+            padding: 60px 0; /* Padding for top and bottom */
+        }
+
+        #contact h2 {
+            margin-bottom: 20px; /* Space below the heading */
+        }
+
+        #contact .contact-info p {
+            margin: 10px 0; /* Vertical spacing for paragraphs */
+            font-size: 16px; /* Font size for text */
+        }
+
+        #contact .social-links a {
+            display: inline-block; /* Inline display of links */
+            margin: 0 10px; /* Horizontal spacing between icons */
+        }
+
+        #contact .social-links img {
+            width: 40px; /* Size of social media icons */
+            height: 40px; /* Maintain aspect ratio */
+        }
+        
+        body {
+            padding-top: 70px; /* Offset for the fixed navbar */
+        }
+
+        .navbar {
+            background-color: #262e46 /* Dark background for navbar */
+        }
+
+        .navbar a {
+            color: #fff; /* White color for navigation links */
+        }
+
+        .navbar a:hover {
+            color: #ccc; /* Light grey on hover */
+        }
+
+        /* Ensures the navbar sticks to the top and is always visible */
+        .navbar {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000; /* High z-index to stay on top of other content */
+        }
+
+    </style>
+
+    
+</head>
+<body>
+    <!-- About Section -->
+    <section id="about" class="mt-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Image Column -->
+                <div class="col-md-6">
+                    <img src="C:\Users\wyhea\AzuraAveProjects\images\about\1.png" class="img-fluid" alt="About Us">
+                </div>
+                <!-- Text Column -->
+                <div class="col-md-6">
+                    <h2>About</h2>
+                    <p>Welcome to <strong>Azura Ave Projects</strong> — where vision meets reality on the journey to innovation. At Azura Ave, we specialize in turning ambitious ideas into tangible outcomes. Founded on the principles of creativity, clarity, and continuous improvement, our projects span across various industries, focusing on technology, design, and sustainable development.</p>
+                    <p><strong>Our Mission</strong> is to deliver innovative solutions that empower communities and enrich lives, driven by creativity and continuous improvement.</p>
+                    <p><strong>Our Vision</strong> is to lead in industry innovation, using cutting-edge technologies to inspire change and advance a sustainable future.</p>
+                    <p><strong>Our Values</strong> of integrity, commitment, and excellence guide us in delivering professional, outstanding results in every project.</p>
+                    <p>Join Us as we pave the way towards a brighter, innovative future. Let’s create something remarkable together.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Projects Section -->
+<section id="projects" class="mt-5">
+    <div class="container text-center">
+        <h2 class="mb-3">Projects</h2>
+        <div class="row">
+            <!-- Project 1 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="images/projects/1.jpg" class="card-img-top" alt="Project 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Project 1</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et nisi metus. Sed et purus ornare, efficitur tellus id, fermentum arcu.</p>
+                        <a href="#" class="btn btn-primary">Blog Post | Source Code</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Project 2 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="images/projects/2.png" class="card-img-top" alt="Project 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Project 2</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et nisi metus. Sed et purus ornare, efficitur tellus id, fermentum arcu.</p>
+                        <a href="#" class="btn btn-primary">Blog Post | Source Code</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Project 3 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="images/projects/3.jpg" class="card-img-top" alt="Project 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Project 3</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et nisi metus. Sed et purus ornare, efficitur tellus id, fermentum arcu.</p>
+                        <a href="#" class="btn btn-primary">Blog Post | Source Code</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Skills Section -->
+<section id="skills" class="mt-5">
+    <div class="container text-center">
+        <h2 class="mb-3">Skills</h2>
+        <div class="row">
+            <!-- Skill 1: Python -->
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="images/skills/1.jpg" class="card-img-top" alt="Python">
+                    <div class="card-body">
+                        <h5 class="card-title">Python</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed nisi turpis.</p>
+                        <a href="#" class="btn btn-primary">Link to course or bootcamp</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Skill 2: SQL -->
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="images/skills/2.png" class="card-img-top" alt="Data Visualization">
+                    <div class="card-body">
+                        <h5 class="card-title">SQL</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed nisi turpis.</p>
+                        <a href="#" class="btn btn-primary">Link to course or bootcamp</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Skill 3: R -->
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="images/skills/3.png" class="card-img-top" alt="SQL">
+                    <div class="card-body">
+                        <h5 class="card-title">R</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed nisi turpis.</p>
+                        <a href="#" class="btn btn-primary">Link to course or bootcamp</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Skill 4: Project Management -->
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="images/skills/4.png" class="card-img-top" alt="Data Storytelling">
+                    <div class="card-body">
+                        <h5 class="card-title">Project Management</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed nisi turpis.</p>
+                        <a href="#" class="btn btn-primary">Link to course or bootcamp</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Me Section -->
+<section id="contact" class="mt-5" style="background-color: #262e46; color: #ffffff;">
+    <div class="container text-center" style="padding: 50px 0;">
+        <h2>Contact Me</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="contact-info">
+                    <p><i class="fas fa-phone-alt"></i> Phone: 970-286-8233</p>
+                    <p><i class="fas fa-envelope"></i> Email: azuraaveprojects@gmail.com</p>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/yourusername" target="_blank"><img src="icons/linkedin.png" alt="LinkedIn"></a>
+                        <a href="https://github.com/yourusername" target="_blank"><img src="icons/github.png" alt="Github"></a>
+                        <a href="https://medium.com/@yourusername" target="_blank"><img src="icons/medium.png" alt="Medium"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Styles will go here */
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Script for smooth scrolling (requires jQuery) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            // Add smooth scrolling to all links
+            $("a").on('click', function(event) {
+                if (this.hash !== "") {
+                    event.preventDefault();
+                    var hash = this.hash;
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function(){
+                        window.location.hash = hash;
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
